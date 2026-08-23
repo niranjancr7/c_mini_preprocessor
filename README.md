@@ -48,25 +48,6 @@ The corresponding header file is opened and its contents are included in the int
 
 The project identifies `#define` statements and collects the macro names and their corresponding values using dynamic memory allocation.
 
-For example:
-
-#define abc 3456
-#define pf printf
-#define coding 65
-
-The macros are then replaced in the source program.
-
-Example:
-
-int k = abc;
-pf("%d %d", k, coding);
-
-After macro replacement:
-
-int k = 3456;
-printf("%d %d", k, 65);
-
-The project retains the `#define` statements present inside included system header files.
 
 ## Technologies Used
 
@@ -110,13 +91,10 @@ abc.i
 
 - File opening and closing
 - Reading and writing files
-- `fgetc()` and `fputc()`
-- `fgets()` and `fputs()`
 - String manipulation
-- Dynamic memory allocation using `malloc()` and `free()`
+- Dynamic memory allocation 
 - File pointer manipulation
 - Temporary file handling
-- `remove()` and `rename()`
 
 ## Output
 
